@@ -13,7 +13,6 @@ export const Navbar = () => {
   return (
     <div>
       {links.map((link, index)=>{
-       
        return <Link key={index} to ={link.path}>
         {link.title}</Link>
      })}
