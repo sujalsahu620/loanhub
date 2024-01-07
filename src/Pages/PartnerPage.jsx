@@ -1,8 +1,9 @@
+import styles from "../Styles/PartnerPage.module.css"
 import React from 'react'
 
 export const PartnerPage = () => {
   return (
-    <div>
+    <div id={styles.PartnerPage}>
       PartnersPage
     </div>
   )
