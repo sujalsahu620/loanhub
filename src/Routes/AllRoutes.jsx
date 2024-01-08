@@ -2,20 +2,21 @@ import { Route, Routes } from "react-router-dom"
 import {HomePage} from "../Pages/HomePage"
 import { LoanPage } from "../Pages/LoanPage"
 import { CompanyPage } from "../Pages/CompanyPage"
-import { LoginPage } from "../Pages/LoginPage"
 import { PaymentPage } from "../Pages/PaymentPage"
 import { SupportPage } from "../Pages/SupportPage"
-import { DetailsPage } from "../Pages/DetailsPage"
+import { ApplicationForm } from "../Pages/DetailsPage"
 import { PrivateRoute } from "./privateRoute";
-import { PartnerPage } from "../Pages/PartnerPage"
+import EmiCalculator from "../Pages/Calculator"
+import {Login} from "../Pages/Login"
 export const  AllRoutes = () => {
     return (
      <Routes>
-        <Route path="/" element={<HomePage/>}/>  
-        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/" element={<HomePage/>}/> 
+        <Route path="/login" element={<Login/>}/>
+        {/* <Route path="signup" element={<Register/>}></Route> */}
         <Route path="/company" element={<CompanyPage />}/>
         <Route path="/support" element={<SupportPage />}/>
-        <Route path="/partners" element={<PartnerPage/>}/>
+        <Route path="/calculator" element={<EmiCalculator/>}/>
         <Route path="/loan" element={
             <PrivateRoute>
             <LoanPage />
@@ -28,7 +29,7 @@ export const  AllRoutes = () => {
         }/>
         <Route path="/details" element={
             <PrivateRoute>
-            <DetailsPage />
+            <ApplicationForm />
             </PrivateRoute>
         }/>
      </Routes>
