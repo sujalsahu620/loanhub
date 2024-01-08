@@ -13,7 +13,7 @@ Our three-member team has successfully developed a loan comparison platform, off
 - React
 - React Router
 - SwiperJS
-- RazopPay
+- RazorPay
 - Json Server
 
 ### Team Member
